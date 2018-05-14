@@ -13,14 +13,14 @@
 <script src="script.js"></script>
 ```
 **在JS文件中不需要写script标签，直接编辑代码即可**
-###script标签的位置
-####放在head部分中
+### script标签的位置
+#### 放在head部分中
 最常用的方式是在页面中head部分放置script元素，浏览器解析head部分就会执行这个代码，然后才解析页面的其余部分。
-####放在body部分中
+#### 放在body部分中
 JavaScript代码在网页读取到该语句的时候就会执行。  
 
 **在HTML页面中的任何位置都可以插入JS代码，但要注意，HTML在解析文件时是按顺序进行的，所以放在前面的代码就会被先执行。比如进行页面显示初始化的js必须放在head里面，因为初始化都要求提前进行（如给页面body设置css等）；而如果是通过事件调用执行的function那么对位置没什么要求的。**
-###JS语句格式
+### JS语句格式
 JS语句代码都要在英文格式下输入
 **语法为**
 *语句；*
@@ -29,15 +29,15 @@ JS语句代码都要在英文格式下输入
     alert("JS复习");//JS语句
 </script>
 ```
-###JS注释
+### JS注释
 注释的内容不会在页面中生效适当的注释可以提高代码的可读性。
-####单行注释"//"
+#### 单行注释"//"
 ```
 <script src="script.js">
     alert("JS复习");//我是单行注释
 </script>
 ```
-####多行注释，以"/*" 开始，以 " */"结尾
+#### 多行注释，以"/*" 开始，以 " */"结尾
 ```
 <script src="script.js">
     alert("JS复习");//我是单行注释
@@ -47,7 +47,7 @@ JS语句代码都要在英文格式下输入
     */
 </script>
 ```
-###JS中的变量
+### JS中的变量
 变量相当于装着某些数值的容器，可以取任意名（区分大小写），但要遵循以下规则：
 
  1. 变量必须使用字母、下划线(_)或者美元符($)开始。
@@ -62,7 +62,7 @@ JS语句代码都要在英文格式下输入
 </script>
 ```
 变量可以重复赋值。
-###JS的判断语句（if...else）
+### JS的判断语句（if...else）
 if...else语句是在指定的条件成立时执行代码，在条件不成立时执行else后的代码。
 **语法为：**
 *if(条件)
@@ -82,7 +82,7 @@ else
     //执行结果为：a比b大
 </script>
 ```
-###JS中的函数（function）
+### JS中的函数（function）
 函数是完成某个特定功能的一组语句。如果有一组代码需要反复执行，则将这些代码放入函数中，在使用时只需调用函数即可。
 **语法为：**
 *function 函数名()
@@ -107,8 +107,8 @@ else
 </html>
 ```
 以上例子使用按钮的点击事件调用函数haha()，我们将不需要编写具体的代码，只需要调用函数即可。
-##JS与浏览器互动
-###向网页输出内容
+## JS与浏览器互动
+### 向网页输出内容
 使用*document.write()*可以直接向HTML流书写内容，也就是向网页中输出内容。
 ```
 <script type="text/javascript">
@@ -122,7 +122,7 @@ else
   document.write("JavaScript");
 </script>
 ```
-###弹出警告（alert）
+### 弹出警告（alert）
 alert可以在网页中弹出一个包含“确定”按钮的小窗口，如果你不点击“确定”，就不能对网页做任何操作。
 语法为：
 *alert(字符串或变量);* 
@@ -134,7 +134,7 @@ alert可以在网页中弹出一个包含“确定”按钮的小窗口，如果
 </script>
 ```
 **alert经常在调试程序中使用**
-###弹出确认框(confirm)
+### 弹出确认框(confirm)
 confirm 消息对话框通常用于允许用户做选择的动作，如：“你对吗？”等。弹出对话框(包括一个确定按钮和一个取消按钮)，用户在点击对话框按钮前，不能进行任何其它操作。
 **语法为：**
 *confirm(str);*
@@ -150,7 +150,7 @@ confirm 消息对话框通常用于允许用户做选择的动作，如：“你
     {  document.write("JS功能强大，要学习噢!");   }
 </script>
 ```
-###弹出提问框（prompt）
+### 弹出提问框（prompt）
 prompt弹出消息对话框,通常用于询问一些需要与用户交互的信息。弹出消息对话框（包含一个确定按钮、取消按钮与一个文本输入框）。
 **语法为：**
 *prompt(str1, str2);*
@@ -167,7 +167,7 @@ if(myname!=null)
 else
   {  alert("你好 my friend.");  }
 ```
-###打开新窗口
+### 打开新窗口
 open() 方法可以查找一个已经存在或者新建的浏览器窗口。
 **语法为：**
 *window.open([URL], [窗口名称], [参数字符串])*
@@ -181,19 +181,19 @@ URL：可选参数，在窗口中要显示网页的网址或路径。如果省�
 <script type="text/javascript"> window.open('http://www.imooc.com','_blank','width=300,height=200,menubar=no,toolbar=no, status=no,scrollbars=yes')
 </script>
 ```
-###关闭窗口
+### 关闭窗口
 close()关闭窗口
 语法：
 *window.close();或*
 *<窗口对象>.close();*
-##JS进行DOM操作
-###认识DOM
+## JS进行DOM操作
+### 认识DOM
 文档对象模型DOM（Document Object Model）定义访问和处理HTML文档的标准方法。DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。
 ![DOM结构][1]
 
 
   [1]: http://img.mukewang.com/52e4bd0f0001dd8d04830279.jpg
-###通过ID获取元素
+### 通过ID获取元素
 学过HTML/CSS样式，都知道，网页由标签将信息组织起来，而标签的id属性值是唯一的，就像是每人有一个身份证号一样，只要通过身份证号就可以找到相对应的人。那么在网页中，我们通过id先找到标签，然后进行操作。
 语法为：
 *document.getElementById("id")*
@@ -213,7 +213,7 @@ close()关闭窗口
 </body>
 </html>
 ```
-###innerHTML
+### innerHTML
 innerHTML 属性用于获取或替换HTML元素的内容。
 **语法为：**
 *Object.innerHTML*
@@ -235,7 +235,7 @@ innerHTML 属性用于获取或替换HTML元素的内容。
 </body>
 </html>
 ```
-###改变HTML样式
+### 改变HTML样式
 **语法为：**
 *Object.style.property=new style;*
 其中Object为获取的元素对象，property为基本属性，如height等。
@@ -256,7 +256,7 @@ innerHTML 属性用于获取或替换HTML元素的内容。
 </body>
 </html>
 ```
-###显示和隐藏元素（display属性）
+### 显示和隐藏元素（display属性）
 显示和隐藏的效果，可通过display属性来设置。
 **语法为：**
 *Object.style.display = value*
@@ -285,7 +285,7 @@ innerHTML 属性用于获取或替换HTML元素的内容。
 </body>
 </html>
 ```
-###控制类名（className属性）
+### 控制类名（className属性）
 className 属性设置或返回元素的class 属性。.
 **语法为：**
 *object.className = classname*
