@@ -1,13 +1,13 @@
-﻿#JavaScipt基础复习-基础篇
+﻿# JavaScipt基础复习-基础篇
 
 ---
-##准备工作
-###插入JavaScript代码
+##  准备工作
+### 插入JavaScript代码
 使用script标签在HTML网页中插入JavaScript代码
 ```
 <script type="text/javascript">JS代码</script>
 ``` 
-###应用外部JS文件
+### 应用外部JS文件
 使用script标签的src属性引入外部文件
 ```
 <script src="script.js"></script>
