@@ -92,7 +92,7 @@ document.write (a==b); //a等于b的值吗? 结果是假(false)
 ### 逻辑操作符
 
 #### 与操作符
-在JavaScript中可以用&&表示，如下：
+在JavaScript中可以用&&表示，如下：  
 ```
 b>a && b<c    //“&&”是并且的意思, 读法"b大于a"并且" b小于c "
 ```
@@ -108,7 +108,7 @@ var b=5;
 var c;
 c=b>a ||a>b;  //b>a是true，a>b是false，c是true
 ```
-逻辑或操作符值表:
+逻辑或操作符值表:  
 ![或][4]
 
 
@@ -121,7 +121,7 @@ var c;
 c=!(b>a);  // b>a值是true,! (b>a）值是false
 c=!(b<a);  // b<a值是false, ! (b<a）值是true
 ```
-逻辑非操作符值表:
+逻辑非操作符值表:  
 ![非][5]
 
 
@@ -233,4 +233,4 @@ myarr[0][1]=5; //将5的值传入到数组中，覆盖原有值。
 
 ---
 
-此页面为本人学习慕课网JavaScript入门篇的个人学习笔记。原地址为https://www.imooc.com/learn/36
+此页面为本人学习慕课网JavaScript入门篇的个人学习笔记。原地址为https://www.imooc.com/learn/10
