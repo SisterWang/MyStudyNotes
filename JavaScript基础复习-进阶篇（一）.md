@@ -233,4 +233,4 @@ myarr[0][1]=5; //将5的值传入到数组中，覆盖原有值。
 
 ---
 
-此页面为本人学习慕课网JavaScript入门篇的个人学习笔记。原地址为https://www.imooc.com/learn/10
+此页面为本人学习慕课网JavaScript进阶篇的个人学习笔记。原地址为https://www.imooc.com/learn/10

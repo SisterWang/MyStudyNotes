@@ -275,3 +275,7 @@ function add2(x,y)
 ```
 var result = add2(3,4);
 ```
+
+---
+
+次页面为本人学习慕课网JavaScript进阶篇的的个人学习笔记。原地址为 https://www.imooc.com/learn/10
