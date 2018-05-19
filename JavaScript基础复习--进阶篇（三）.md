@@ -349,3 +349,7 @@ function sortNum(a,b) {
     return b - a;
 }
 ```
+
+---
+
+次页面为本人学习慕课网JavaScript进阶篇的的个人学习笔记。原地址为 https://www.imooc.com/learn/10
